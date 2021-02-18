@@ -1,0 +1,268 @@
+* {
+    text-decoration: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Open Sans',sans-serif;
+}
+
+body , html{
+	scroll-behavior: smooth;
+}
+
+
+.wrapper {
+    width: 1100px;
+    margin: auto;
+    position: relative;
+}
+
+.menu {
+    float: right;
+}
+
+                                        /* css untuk navbar */
+nav {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    line-height: 80px;
+    position: sticky;
+    position: -webkit-sticky; 
+    top: 0;
+    background: #ffffff;
+    z-index: 1;
+    border-bottom:1px solid #364f6b;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+nav ul li {
+    float: left;
+}
+
+nav ul li a {
+    color: black;
+    font-weight: bold;
+    text-align: center;
+    padding: 0px 16px 0px 16px;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+section {
+    margin: auto;
+    display: flex;
+    margin-bottom: 50px;
+}
+
+                                        /* css untuk info */
+.kolom {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.kolom .deskripsi {
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'comic sans ms';
+    color: #364f6b;
+}
+
+h2 {
+    font-family: 'comic sans ms';
+    font-weight: 800;
+    font-size: 45px;
+    margin-bottom: 20px;
+    color: #364f6b;
+    width: 100%;
+    line-height: 50px;
+}
+
+a.tbl-pink {
+    background: #fc5185;
+    border-radius: 20px;
+    margin-top: 20px;
+    padding: 15px 20px 15px 20px;
+    color: #ffffff;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+a.tbl-pink:hover {
+    background: #3f72af;
+    text-decoration: none;
+}
+
+p {
+    margin: 10px 0px 10px 0px;
+    padding: 10px 0px 10px 0px;
+}
+
+.tengah {
+    text-align: center;
+    width: 100%;
+}
+
+.list-kartu {
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.kartu {
+    width: 20%;
+    margin: 0 auto;
+}
+
+.kartu img {
+    width: 80%;
+    border-radius: 50%;
+}
+
+.kartu p {
+    font-family: 'comic sans ms';
+    font-weight: 800;
+    font-size: 25px;
+    text-align: center;
+    color: #364f6b;
+}
+
+h1 {
+    font-size: 50px;
+    font-weight: 800;
+    float: left;
+    font-family: courier;
+    color: #364f6b;
+}
+
+h1 a {
+	transition: .3s;
+}
+
+h1 a:hover {
+	color: #f84744;
+}
+
+                                        /* css untuk footer */
+footer {
+    padding: 10px;
+    color: #ffffff;
+    background-color: #252525;
+    text-align: center;
+    margin: 0;
+}
+
+                                        /* css untuk about me */
+:root {
+    --clr-primary: #651fff;
+    --clr-gray: #37474f;
+    --clr-gray-light: #b0bec5;
+}
+
+.wrapper-flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.container {
+    overflow: hidden;
+    box-shadow: 0px 2px 8px 0px var(--clr-gray-light);
+    background-color: white;
+    text-align: center;
+    border-radius: 1rem;
+    position: relative;
+    width: 280px;
+    margin-bottom: 1rem;
+    margin-left: 1rem;
+}
+
+.banner-img {
+    position: absolute;
+    background-image: url(aset/bg81.jpg);
+    height: 10rem;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.profile-img {
+    width: 11rem;
+    clip-path: circle(60px at center);
+    margin-top: 4.5rem;
+    width: 460;
+    height: 345;
+}
+
+.name {
+    font-weight: bold;
+    font-size: 1.4rem;
+}
+
+.description {
+    margin: 1rem 2rem;
+    font-size: 0.9rem;
+}
+
+                                /* css untuk button ke atas */
+#Button{
+	position: absolute;
+	top: 80%;
+	left: 70%;
+	position: fixed;
+	width: 10px;
+	display: none;
+}
+
+                                        /* css untuk responsif */
+@media screen and (max-width: 1080px) {
+    .wrapper {
+        width: 90%;
+    }
+
+
+    nav .menu {
+        width: 100%;
+        margin: 0;
+    }
+
+    nav .menu ul {
+        text-align: center;
+        margin: auto;
+        line-height: 60px;
+    }
+
+    nav .menu ul li {
+        display: inline-block;
+        float: none;
+    }
+
+    section {
+        display: block;
+    }
+
+    section img {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+
+    .kartu {
+        width: 50%;
+    }
+}
